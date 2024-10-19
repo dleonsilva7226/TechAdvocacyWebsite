@@ -5,13 +5,9 @@
   License: none (public domain)
 */
 
-html, body, div {
-	margin: 0;
-	padding: 50px;
-	border: 10px;
-	vertical-align: baseline;
-	background-color: #B5DBFB;
-}
+
+	
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -21,13 +17,26 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	/* padding: 50px; */
+	border: 10px;
+	vertical-align: baseline;
+	background-color: #B5DBFB;
 }
 
 input {
 	display: block;
 }
 
-.heading-section {
+.header-section {
+	flex: 1;
+	height: 100px;
+	background-color: lightgray;
+	align-items: baseline;
+	/* padding: 0; */
+}
+
+.title-section {
 	text-align: center;
 	
 }
