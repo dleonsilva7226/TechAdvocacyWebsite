@@ -9,7 +9,7 @@ function changeBackgroundInverse () {
         darkModeButton.innerHTML = "Toggle Dark Mode";
         isDarkMode = false;
     } else {
-        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.backgroundColor = "#4A4A4A";
         document.querySelector("body").style.color = "white";
         darkModeButton.innerHTML = "Toggle Light Mode";
         isDarkMode = true;
