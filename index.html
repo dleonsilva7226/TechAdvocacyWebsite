@@ -30,7 +30,7 @@
 
     <!--- Headings --->
     <img  /> <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
-    <div class = "header-section">
+    <div class = "header-section navbar">
         <!-- For Navigation Search Box -->
         <!-- <div class = "nav-search-container">
             <input type="text" id = "website-nav-search" placeholder = "🔍 Search For Content 🔍">
@@ -47,6 +47,7 @@
     </div>
 
     <div class = "title-section">
+
         <h1 class = "heading-title" id = "home-tab">DevStream</h1>
         <br></br>
         <h3 class = "heading-blurb">Curated Tech Info, All in One Place</h3>
@@ -59,7 +60,7 @@
     </div>
 
     <!--- About --->
-    <div class = "about-section blurb" id = "about-tab">
+    <div class = "about-section blurb revealable active" id = "about-tab">
         <h2 class = "topic-heading" id = "hello">About</h2>
         <p class = "topic-info">
             These days, we are told by individuals around us that we can learn
@@ -77,30 +78,32 @@
         </p>
 
     </div>
+    <div class = "revealable">
+        <h2 class = "topic-heading" id = "impact-tab">Impact!</h2>
 
-    <h2 class = "topic-heading" id = "impact-tab">Impact!</h2>
+        <center><img src="./career_progress.jpg" alt = "Career Development" class = "image"/></center>
+        <h3 class = "topic-subheading">Where can this problem have lasting effects?</h3>
+        
+        <p class = "topic-info blurb"> 
+            Career Development
+            <br></br>
+            Difficulty in learning can hinder individuals' ability to acquire new skills, potentially limiting their career advancement and employability.
+        </p>
 
-    <center><img src="./career_progress.jpg" alt = "Career Development" class = "image"/></center>
-    <h3 class = "topic-subheading">Where can this problem have lasting effects?</h3>
-    
-    <p class = "topic-info blurb"> 
-        Career Development
-        <br></br>
-        Difficulty in learning can hinder individuals' ability to acquire new skills, potentially limiting their career advancement and employability.
-    </p>
+        <center><img src="./productive_people.jpg" alt = "Negative Learning Habits" class = "image"/></center>
+        <h3 class = "topic-subheading">Where else can this problem have lasting effects?</h3>
 
-    <center><img src="./productive_people.jpg" alt = "Negative Learning Habits" class = "image"/></center>
-    <h3 class = "topic-subheading">Where else can this problem have lasting effects?</h3>
+        <p class = "topic-info blurb"> 
+            Long-term Learning Habits
+            <br></br>
 
-    <p class = "topic-info blurb"> 
-        Long-term Learning Habits
-        <br></br>
+            Struggling to find a clear roadmap might create negative learning habits, such as procrastination or reliance on superficial learning, which can affect lifelong learning.
+        </p>
 
-        Struggling to find a clear roadmap might create negative learning habits, such as procrastination or reliance on superficial learning, which can affect lifelong learning.
-    </p>
+    </div>
 
     <!-- Videos in content are placeholders. Will upload actual content soon -->
-    <div class = "content-container blurb" id = "content-tab">
+    <div class = "content-container blurb revealable" id = "content-tab">
 
         <h2 class = "topic-heading">Content</h2>
         <div class = "machine-learning-content">
@@ -182,9 +185,9 @@
 
 
 
-    <div class = "topic-heading" id = "contact-us-tab">Contact Us (Coming Soon)</div>
+    <div class = "topic-heading revealable" id = "contact-us-tab">Contact Us (Coming Soon)</div>
 
-    <div class="petition" id="petition">
+    <div class="petition revealable" id="petition">
 
         <h2>Sign Our Petition 📢</h2>
         <div class="petition-container">
@@ -232,6 +235,23 @@
        <!--- Sign Now Button --->
       <button id="sign-now-button">Sign Now</button>
     
+    </div>
+
+
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="modal-text-container">
+                <p id = "thanks-modal-content"></p>
+                <!-- text here -->
+                <!-- button here (stretch feature) -->
+            </div>
+            <!-- image here-->
+            <img id = "modal-image" src="software_ed.avif" alt="Software Education Image" width="450" height="300">
+        </div>
+        
     </div>
 
 
